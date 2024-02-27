@@ -13,7 +13,7 @@ gem 'minitest-defined_mock'
 # $ bundle install
 
 # ...or install globally
-gem install 'minitest-defined_mock'
+# $ gem install 'minitest-defined_mock'
 ```
 
 ## Usage

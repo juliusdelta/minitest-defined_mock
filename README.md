@@ -1,4 +1,7 @@
 # Minitest::DefinedMock
+
+![](https://img.shields.io/github/actions/workflow/status/juliusdelta/minitest-defined_mock/main.yml)
+
 `Minitest::DefinedMock` provides a way to safely build mocks for object dependencies, when you're unable to manage your dependencies in a preferable way. It will not only implement normal `Minitest::Mock` behavior but also perform an extra step to _verify_ that the method you expect does in fact exist on the object dependency and that the correct arguments are passed in. This gem just wraps `Minitest::Mock#expect` and `Minitest::Mock#verify` and enhances their behavior with these extra cases.
 
 An issue may arise when you're testing with mocks and an underlying method has changed on a depdenent object which can sometimes create a situation where your tests pass, but your functionality doesn't work. `Minitest::DefinedMock` helps to prevent this issue.
